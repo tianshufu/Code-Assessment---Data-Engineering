@@ -1,0 +1,2 @@
+2022-11-08 09:58:57.200439,Combined Print and E-Book Nonfiction,2022-10-29,2022-11-13
+2022-11-08 09:58:57.703538,Combined Print and E-Book Fiction,2022-10-29,2022-11-13

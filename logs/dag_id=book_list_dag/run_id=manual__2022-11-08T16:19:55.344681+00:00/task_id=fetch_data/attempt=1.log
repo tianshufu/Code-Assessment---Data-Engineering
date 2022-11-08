@@ -1,0 +1,24 @@
+[2022-11-08T16:19:56.831+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: book_list_dag.fetch_data manual__2022-11-08T16:19:55.344681+00:00 [queued]>
+[2022-11-08T16:19:56.846+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: book_list_dag.fetch_data manual__2022-11-08T16:19:55.344681+00:00 [queued]>
+[2022-11-08T16:19:56.847+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T16:19:56.848+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-08T16:19:56.849+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T16:19:56.867+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): fetch_data> on 2022-11-08 16:19:55.344681+00:00
+[2022-11-08T16:19:56.875+0000] {standard_task_runner.py:55} INFO - Started process 849 to run task
+[2022-11-08T16:19:56.880+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'book_list_dag', 'fetch_data', 'manual__2022-11-08T16:19:55.344681+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/book_lists_dag.py', '--cfg-path', '/tmp/tmp1ezlxxi5']
+[2022-11-08T16:19:56.881+0000] {standard_task_runner.py:83} INFO - Job 40: Subtask fetch_data
+[2022-11-08T16:19:56.975+0000] {task_command.py:376} INFO - Running <TaskInstance: book_list_dag.fetch_data manual__2022-11-08T16:19:55.344681+00:00 [running]> on host 786e58bb7830
+[2022-11-08T16:19:57.076+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=book_list_dag
+AIRFLOW_CTX_TASK_ID=fetch_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-08T16:19:55.344681+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-08T16:19:55.344681+00:00
+[2022-11-08T16:19:57.631+0000] {logging_mixin.py:120} INFO - records:{'2022-10-29'}
+[2022-11-08T16:19:57.632+0000] {python.py:177} INFO - Done. Returned value was: 
+[2022-11-08T16:19:57.670+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=book_list_dag, task_id=fetch_data, execution_date=20221108T161955, start_date=20221108T161956, end_date=20221108T161957
+[2022-11-08T16:19:57.741+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-08T16:19:57.806+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

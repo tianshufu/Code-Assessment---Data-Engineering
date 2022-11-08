@@ -1,0 +1,23 @@
+[2022-11-08T12:07:04.552+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: book_list_dag.send_email manual__2022-11-08T12:07:00.711764+00:00 [queued]>
+[2022-11-08T12:07:04.571+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: book_list_dag.send_email manual__2022-11-08T12:07:00.711764+00:00 [queued]>
+[2022-11-08T12:07:04.572+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T12:07:04.573+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-08T12:07:04.574+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T12:07:04.595+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): send_email> on 2022-11-08 12:07:00.711764+00:00
+[2022-11-08T12:07:04.602+0000] {standard_task_runner.py:55} INFO - Started process 1360 to run task
+[2022-11-08T12:07:04.608+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'book_list_dag', 'send_email', 'manual__2022-11-08T12:07:00.711764+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/book_lists_dag.py', '--cfg-path', '/tmp/tmpv10kk698']
+[2022-11-08T12:07:04.610+0000] {standard_task_runner.py:83} INFO - Job 24: Subtask send_email
+[2022-11-08T12:07:04.715+0000] {task_command.py:376} INFO - Running <TaskInstance: book_list_dag.send_email manual__2022-11-08T12:07:00.711764+00:00 [running]> on host 786e58bb7830
+[2022-11-08T12:07:04.831+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=book_list_dag
+AIRFLOW_CTX_TASK_ID=send_email
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-08T12:07:00.711764+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-08T12:07:00.711764+00:00
+[2022-11-08T12:07:05.527+0000] {python.py:177} INFO - Done. Returned value was: ["For list name: Combined Print and E-Book Nonfiction, best_seller_date:2022-10-29, publish date:2022-11-13, the rank goes as follows: \n1:RADIO'S GREATEST OF ALL TIME,by Rush Limbaugh with Kathryn Adams Limbaugh and David Limbaugh \n2:I'M GLAD MY MOM DIED,by Jennette McCurdy \n3:AND THERE WAS LIGHT,by Jon Meacham \n4:WAYPOINTS,by Sam Heughan \n5:THE BODY KEEPS THE SCORE,by Bessel van der Kolk \n6:THE SONG OF THE CELL,by Siddhartha Mukherjee \n7:MY TRAVELS WITH MRS. KENNEDY,by Clint Hill and Lisa McCubbin Hill \n8:JUSTICE CORRUPTED,by Ted Cruz \n9:THE REVOLUTIONARY,by Stacy Schiff \n10:CONFIDENCE MAN,by Maggie Haberman \n11:THE LAST FOLK HERO,by Jeff Pearlman \n12:KILLING THE LEGENDS,by Bill O'Reilly and Martin Dugard \n13:THE EXTRAORDINARY LIFE OF AN ORDINARY MAN,by Paul Newman \n14:BEYOND THE WAND,by Tom Felton \n15:LIVE WIRE,by Kelly Ripa \n\nFor list name: Combined Print and E-Book Fiction, best_seller_date:2022-10-29, publish date:2022-11-13, the rank goes as follows: \n1:IT STARTS WITH US,by Colleen Hoover \n2:NO PLAN B,by Lee Child and Andrew Child \n3:IT ENDS WITH US,by Colleen Hoover \n4:THE BOYS FROM BILOXI,by John Grisham \n5:VERITY,by Colleen Hoover \n6:FIRE AND BLOOD,by George R.R. Martin \n7:LIVID,by Patricia Cornwell \n8:THE PASSENGER,by Cormac McCarthy \n9:UGLY LOVE,by Colleen Hoover \n10:LONG SHADOWS,by David Baldacci \n11:FAIRY TALE,by Stephen King \n12:WHERE THE CRAWDADS SING,by Delia Owens \n13:MAD HONEY,by Jodi Picoult and Jennifer Finney Boylan \n14:DEMON COPPERHEAD,by Barbara Kingsolver \n15:THE SEVEN HUSBANDS OF EVELYN HUGO,by Taylor Jenkins Reid \n"]
+[2022-11-08T12:07:05.568+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=book_list_dag, task_id=send_email, execution_date=20221108T120700, start_date=20221108T120704, end_date=20221108T120705
+[2022-11-08T12:07:05.635+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-08T12:07:05.669+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
